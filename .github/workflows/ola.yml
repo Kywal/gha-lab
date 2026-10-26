@@ -4,7 +4,7 @@ name: Olá, Actions
 on: push
 
 jobs: 
-  boas vindas:
+  boas-vindas:
     runs-on: ubuntu-latest
     steps: 
       - name: boas vindas
