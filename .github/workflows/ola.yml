@@ -3,13 +3,13 @@ name: boas vindas
 
 on: push
 
-
 jobs: 
   welcome:
     runs-on: ubuntu-latest
-    run: |
-      echo "Seja bem vindo ${{ github.actor }}!"
-      echo "Essa pipeline foi disparada pelo evento de nome ${{ GITHUB_EVENT_NAME }}"
-      echo "Está sendo executada em runner cujo SO é: ${{ RUNNER_OS }}"
-      echo "E possui o interpretador de python na versão: $(python --version)" 
+    steps: 
+      run: |
+        echo "Seja bem vindo ${{ github.actor }}!"
+        echo "Essa pipeline foi disparada pelo evento de nome ${{ GITHUB_EVENT_NAME }}"
+        echo "Está sendo executada em runner cujo SO é: ${{ RUNNER_OS }}"
+        echo "E possui o interpretador de python na versão: $(python --version)" 
       
