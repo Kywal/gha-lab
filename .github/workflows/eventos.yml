@@ -2,5 +2,17 @@ name: Eventos e entradas
 
 on: 
   workflow_dispatch:
+    inputs:
+      nome:
+        description: "Quem você quer cumprimentar?"
+        required: true
+        default: "turma"
+  push:
     paths:
       - 'src/**'
+
+jobs: 
+  eventos-e-entradas:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Modificação no código fonte/source realizada!"
