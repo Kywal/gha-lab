@@ -10,6 +10,6 @@ jobs:
       - run: |
           echo "Seja bem vindo ${{ GITHUB.ACTOR }}!"
           echo "Essa pipeline foi disparada pelo evento de nome ${{ GITHUB.EVENT_NAME }}"
-          echo "Está sendo executada em runner cujo SO é: ${{ RUNNER_OS }}"
+          echo "Está sendo executada em runner cujo SO é: ${{ RUNNER.OS }}"
           echo "E possui o interpretador de python na versão: $(python --version)" 
       
