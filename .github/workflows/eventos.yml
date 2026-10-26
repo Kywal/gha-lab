@@ -1,0 +1,6 @@
+name: Eventos e entradas
+
+on: 
+  workflow_dispatch:
+    paths:
+      - 'src/**'
