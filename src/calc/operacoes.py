@@ -19,3 +19,5 @@ def media(valores: list[float]) -> float:
     if not valores:
         raise ValueError("lista vazia")
     return sum(valores) / len(valores)
+
+# Realizando teste de mudança no src/**
