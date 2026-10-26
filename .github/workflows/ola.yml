@@ -4,10 +4,11 @@ name: Olá, Actions
 on: push
 
 jobs: 
-  welcome:
+  boas vindas:
     runs-on: ubuntu-latest
     steps: 
-      - run: |
+      - name: boas vindas
+        run: |
           echo "Seja bem vindo ${{ GITHUB.ACTOR }}!"
           echo "Essa pipeline foi disparada pelo evento de nome ${{ GITHUB.EVENT_NAME }}"
           echo "Está sendo executada em runner cujo SO é: ${{ RUNNER.OS }}"
